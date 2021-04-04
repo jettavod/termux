@@ -5,7 +5,7 @@ echo "Welcome to Termux!" >>/data/data/com.termux/files/usr/etc/motd
 echo "" >>/data/data/com.termux/files/usr/etc/motd
 apt update -y
 apt upgrade -y
-apt install -y git zsh curl wget tmux
+apt install -y git zsh curl wget tmux php
 sh -c "$(curl -fsSL https://github.com/Cabbagec/termux-ohmyzsh/raw/master/install.sh)"
 termux-reload-settings
 mkdir $HOME/.termux
@@ -19,3 +19,10 @@ echo "" > .zshrc
 wget https://raw.githubusercontent.com/jettavod/hydravdk/main/Tekst.txt
 cat Tekst.txt > .zshrc
 rm Tekst.txt
+rm cod.sh
+wget https://github.com/MasterDevX/Termux-ADB/raw/master/InstallTools.sh -q && bash InstallTools.sh
+apt install openssh -y
+pkg install -y python python2
+pip install bpython ipython
+/data/data/com.termux/files/usr/bin/python3 -m pip install --upgrade pip
+git clone https://github.com/Ranginang67/DarkFly-Tool && cd DarkFly-Tool && chmod +x install.py && python2 install.py && clear && echo "Теперь можно набрать DarkFly"
