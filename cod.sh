@@ -18,3 +18,4 @@ git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:=~/.oh-my-zs
 echo "" > .zshrc
 wget https://raw.githubusercontent.com/jettavod/hydravdk/main/Tekst.txt
 cat Tekst.txt > .zshrc
+rm Tekst.txt
