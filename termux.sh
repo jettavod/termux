@@ -1,4 +1,6 @@
 #!/data/data/com.termux/files/usr/bin/bash
+
+
 echo >/data/data/com.termux/files/usr/etc/motd
 echo "" >/data/data/com.termux/files/usr/etc/motd
 echo "Welcome to Termux!" >>/data/data/com.termux/files/usr/etc/motd
@@ -27,11 +29,11 @@ clear
 git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/zsh-completions
 clear
 echo "" > .zshrc
-wget https://raw.githubusercontent.com/jettavod/hydravdk/main/zshrcc
-cat zshrcc > .zshrc
-rm zshrcc
+#wget https://raw.githubusercontent.com/jettavod/hydravdk/main/zshrcc
+cat ~/hydravdk/zshrcc > .zshrc
+rm ~/hydravdk/zshrcc
 clear
 wget https://github.com/MasterDevX/Termux-ADB/raw/master/InstallTools.sh -q && bash InstallTools.sh
 git clone https://github.com/Ranginang67/DarkFly-Tool && cd DarkFly-Tool && chmod +x install.py && python2 install.py && clear && echo "Теперь можно набрать DarkFly"
-rm termux.sh
+rm ~/hydravdk/termux.sh
 exit
