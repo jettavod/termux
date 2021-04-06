@@ -29,7 +29,6 @@ clear
 git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/zsh-completions
 clear
 echo "" > .zshrc
-#wget https://raw.githubusercontent.com/jettavod/hydravdk/main/zshrcc
 cat ~/hydravdk/zshrcc > .zshrc
 rm ~/hydravdk/zshrcc
 clear
