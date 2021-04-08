@@ -37,8 +37,8 @@ clear
 git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/zsh-completions
 clear
 echo "" > .zshrc
-cat ~/hydravdk/zshrcc > .zshrc
-rm ~/hydravdk/zshrcc
+cat ~/termux/zshrcc > .zshrc
+rm ~/termux/zshrcc
 clear
 wget https://github.com/MasterDevX/Termux-ADB/raw/master/InstallTools.sh -q && bash InstallTools.sh
 git clone https://github.com/Ranginang67/DarkFly-Tool && cd DarkFly-Tool && chmod +x install.py && python2 install.py && clear && echo "Теперь можно набрать DarkFly"
