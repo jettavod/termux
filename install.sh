@@ -72,7 +72,6 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 clear
 git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/zsh-completions
 clear
-echo "" > .zshrc
 cat ~/termux/zshrcc > .zshrc
 rm ~/termux/zshrcc
 clear
