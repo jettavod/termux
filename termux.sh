@@ -7,13 +7,21 @@ echo "Welcome to Termux!" >>/data/data/com.termux/files/usr/etc/motd
 echo "" >>/data/data/com.termux/files/usr/etc/motd
 apt update -y
 clear
-apt upgrade -y
+echo "Обновлено"
+sleep 3
 clear
-apt install -y git zsh curl wget tmux php python python2 openssh
+apt install -y zsh curl wget tmux php python python2 openssh
+clear
+echo "Установлено [zsh curl wget tmux php python python2 openssh]"
+sleep 3
 clear
 pip install bpython ipython
+echo "Установлено [bpython ipython]"
+sleep 3
 clear
 /data/data/com.termux/files/usr/bin/python3 -m pip install --upgrade pip
+echo "Обновлено [pip]"
+sleep 3
 clear
 sh -c "$(curl -fsSL https://github.com/Cabbagec/termux-ohmyzsh/raw/master/install.sh)"
 termux-reload-settings
